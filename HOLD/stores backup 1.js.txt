@@ -1,0 +1,25 @@
+import { writable } from 'svelte/store';
+
+// =========================================================================
+//  MODAL STORE & UPDATER
+// =========================================================================
+
+function toggleModal() {
+    ModalIsUp.update((b) => !b);
+}
+
+export const ModalIsUp = writable(false);
+// export function toggleModal() => toggle;
+export { toggleModal }
+
+// =========================================================================
+//  MODAL STORE & UPDATER
+// =========================================================================
+
+function toggleToast() {
+    ToastIsUp.update((b) => !b);
+}
+
+export const ToastIsUp = writable(false);
+// export function toggleModal() => toggle;
+export { toggleToast }

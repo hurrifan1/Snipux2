@@ -1,0 +1,16 @@
+[
+    {
+        "description": "FOR loop that drops all tables.",
+        "name": "Drop tables",
+        "lastModifiedGMT": 1669684930,
+        "language": "QlikScript",
+        "code": "for x = NoOfTables()-1 to 0 step -1\nlet a = TableName(for x = NoOfTables()-1 to 0 step -1\nlet a = TableName($(x));\n    drop table [$(a)];\nnext x(x));\n    drop table [for x = NoOfTables()-1 to 0 step -1\nlet a = TableName($(x));\n    drop table [$(a)];\nnext x(a)];\nnext x"
+    },
+    {
+        "description": "Load script that will generate dates between a start and end date.",
+        "name": "Generate dates",
+        "lastModifiedGMT": 1669685478,
+        "language": "QlikScript",
+        "code": "datesDateField:\nLOAD\nDate( Date('1/1/2016') + ( IterNo() - 1 ) ) as [Date Field]\n  , Rand() as expr1\nAutoGenerate 1\nWHILE IterNo() <= ( num( Date('1/1/2022') ) - num(Date('1/1/2016')) )\n;"
+    }
+]
